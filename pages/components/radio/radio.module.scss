@@ -1,0 +1,28 @@
+@import '../../../styles/variables.module.scss';
+
+.radio {
+    margin: 0;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid $gray2;
+    border-radius: 50%;
+    background-clip: content-box;
+    padding: 2px;
+
+    background-position: center;
+
+    &:hover {
+        border-color: $turquoiseBright;
+    }
+
+    &:checked {
+        background-color: $turquoiseBright;
+        border-color: $turquoiseBright;
+    }
+
+    &:disabled {
+        border-color: $gray4;
+        background-color: transparent;
+    }
+}

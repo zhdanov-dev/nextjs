@@ -1,0 +1,38 @@
+@import '../../../styles/variables.module.scss';
+
+.button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 24px;
+    gap: 12px;
+    width: 151px;
+    height: 42px;
+    background: $howeredDarkGreen;
+    box-shadow: $darkGreenHoverShadow;
+    border-radius: 6px;
+    color: $darkGreen;
+    @include descriptionFont;
+    margin-left: 48px;
+
+    &:hover {
+        background: $turquoise;
+        box-shadow: none;
+        color: white;
+    }
+
+    &:active {
+        color: white;
+        box-shadow: none;
+        background: $darkGreen;
+    }
+
+    &:disabled {
+        color: rgba($darkGreen, 0.45);
+        box-shadow: none;
+        background: $howeredDarkGreen;
+        cursor: default;
+    }
+
+}

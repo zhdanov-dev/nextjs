@@ -1,0 +1,46 @@
+@import '../../../styles/variables.module.scss';
+
+.radioButton {
+    display: block;
+    width: 400px;
+    height: 50px;
+    border-radius: 3px;
+    box-shadow: $noHoverShadow;
+    @include descriptionFont;
+    padding: 14px;
+    flex: 1 1 auto;
+    margin: 12px;
+
+    .radio,
+    label {
+        display: inline-block;
+        line-height: 14px;
+    }
+
+    .radio {
+        margin-left: 14px;
+    }
+
+    label {
+        margin-left: 14px;
+    }
+
+    &:hover:not(.disabled) {
+        box-shadow: $hoverShadow;
+
+        .radio {
+            border-color: $turquoiseBright;
+
+        }
+    }
+
+    &.checked {
+        box-shadow: $pressedShadow;
+    }
+
+    &.disabled {
+        box-shadow: $hoverShadow;
+        color: $gray3;
+    }
+
+}

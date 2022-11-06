@@ -1,0 +1,68 @@
+@import '../../../styles/variables.module.scss';
+
+.header {
+    display: flex;
+    width: 100%;
+    height: 128px;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 20px;
+    color: $gray2;
+
+    border-bottom: 1px solid $gray4;
+}
+
+.header__text {
+    text-transform: uppercase;
+    margin-right: 172px;
+}
+
+.header__icons {
+    display: flex;
+}
+
+.icons__quest {
+    display: flex;
+    align-items: center;
+}
+
+.quest__img {
+    height: 36px;
+    width: 36px;
+    background: url("../../../styles/static/add.svg") no-repeat center center;
+    margin-left: 38px;
+}
+
+.quest__text {
+    margin-left: 15px;
+    font-weight: 500;
+    font-size: 24px;
+    color: $darkGreen;
+}
+
+.icons__time {
+    display: flex;
+    align-items: center;
+}
+
+.time__img {
+    height: 36px;
+    width: 36px;
+    margin-left: 33px;
+    background: url("../../../styles//static/time.svg") no-repeat center center;
+}
+
+.time__text {
+    margin-left: 12px;
+    font-weight: 400;
+    font-size: 24px;
+    color: $darkGreen;
+}
+
+.header__logo {
+    width: 64px;
+    height: 64px;
+    margin-right: 32px;
+    background: url("../../../styles/static/minilogo.svg") no-repeat center center;
+}

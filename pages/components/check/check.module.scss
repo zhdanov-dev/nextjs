@@ -1,0 +1,28 @@
+@import '../../../styles/variables.module.scss';
+
+.check {
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 2px solid $gray2;
+    border-radius: 2px;
+
+    &:hover {
+        border-color: $turquoiseBright;
+    }
+
+    &:checked {
+        background-image: url('../../../styles/static/marker.svg');
+        background-repeat: no-repeat;
+        background-size: 14px 10px;
+        background-color: $turquoiseBright;
+        background-position: 2px 4px;
+        border: none;
+    }
+
+    &:disabled {
+        border-color: #C4C4C4;
+        background: transparent;
+    }
+
+}
