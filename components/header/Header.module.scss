@@ -1,4 +1,4 @@
-@import '../../../styles/variables.module.scss';
+@import '../../styles/variables.module.scss';
 
 .header {
     display: flex;
@@ -30,7 +30,7 @@
 .quest__img {
     height: 36px;
     width: 36px;
-    background: url("../../../styles/static/add.svg") no-repeat center center;
+    background: url("../../styles/static/add.svg") no-repeat center center;
     margin-left: 38px;
 }
 
@@ -50,7 +50,7 @@
     height: 36px;
     width: 36px;
     margin-left: 33px;
-    background: url("../../../styles//static/time.svg") no-repeat center center;
+    background: url("../../styles//static/time.svg") no-repeat center center;
 }
 
 .time__text {
@@ -64,5 +64,5 @@
     width: 64px;
     height: 64px;
     margin-right: 32px;
-    background: url("../../../styles/static/minilogo.svg") no-repeat center center;
+    background: url("../../styles/static/minilogo.svg") no-repeat center center;
 }

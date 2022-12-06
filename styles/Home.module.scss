@@ -3,6 +3,7 @@
 .container {
   display: grid;
   grid-template-columns: max-content 1fr;
+  height: 100vh;
 }
 
 .header__and__content {
@@ -24,6 +25,12 @@
   align-items: center;
   max-width: 824px;
   min-height: 374px;
+  margin-top: 60px;
+}
+
+.img {
+  width: 600px;
+  height: 400px;
 }
 
 .question {
@@ -34,6 +41,7 @@
   padding: 0px 80px 0px 80px;
   margin-bottom: 60px;
   max-width: 650px;
+  margin-top: 20px;
 }
 
 .answers {

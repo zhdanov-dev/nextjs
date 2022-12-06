@@ -7,6 +7,7 @@ export default function Radio(props) {
       type="radio"
       disabled={props.disabled}
       checked={props.checked}
+      name='name'
     />
   );
 }

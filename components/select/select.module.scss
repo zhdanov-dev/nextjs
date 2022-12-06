@@ -1,14 +1,13 @@
-@import '../../../styles/variables.module.scss';
+@import '../../styles/variables.module.scss';
 
 .container {
     display: flex;
     flex-direction: column;
     align-items: center; 
     width: 100px;
-    height: 100%;
     background: #FFFFFF;
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.06);
-    max-height: 100vh;
+    height: 100%;
     overflow: auto;
 
     &::-webkit-scrollbar {
@@ -21,7 +20,7 @@
 .back {
     width: 10px;
     min-height: 18px;
-    background: url('../../../styles/static/arrow.svg') no-repeat center;
+    background: url('../../styles/static/arrow.svg') no-repeat center;
     margin-top: 55px;
     margin-bottom: 55px;
 }
@@ -31,6 +30,7 @@
     text-align: center;
     line-height: 24px;
     color: $gray3;
+    cursor: pointer;
 
     &::after {
         display: flex;
@@ -51,8 +51,44 @@
     }
 }
 
+.activeQuestion {
+    width: 34px;
+    text-align: center;
+    line-height: 24px;
+    color: $darkGreen;
+    cursor: pointer;
+
+    &::after {
+        display: flex;
+        align-self: center;
+        content: '';
+        height: 1px;
+        background-color: #E0E0E0;
+        margin-top: 12px;
+        margin-bottom: 12px;
+    }
+}
+
 .lastquestion {
     width: 34px;
     text-align: center;
     margin-bottom: 12px;
+    color: $gray3;
+    cursor: pointer;
+
+    &:active {
+        color: $turquoiseBright;
+    }
+
+    &:disabled {
+        color: $darkGreen;
+    }
+}
+
+.activeLastQuestion {
+    width: 34px;
+    text-align: center;
+    margin-bottom: 12px;
+    color: $darkGreen;
+    cursor: pointer;
 }
