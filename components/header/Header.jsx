@@ -6,7 +6,7 @@ export default function Header(props) {
             <div className={styles.header__icons}>
                 <div className={styles.icons__quest}>
                     <div className={styles.quest__img}/>
-                    <div className={styles.quest__text}>0/{props.questions}</div>
+                    <div className={styles.quest__text}>{props.passedQuestion}/{props.questions}</div>
                 </div>
                 <div className={styles.icons__time}>
                     <div className={styles.time__img}/>

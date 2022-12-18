@@ -1,21 +1,25 @@
-import styles from "./radiobutton.module.scss";
-import Radio from "../radio/radio";
-import { useState } from "react";
+import styles from './radiobutton.module.scss';
 
 export default function RadioButton(props) {
-  const [isChecked, setIsChecked] = useState(props.checked);
+	function changeActiveOption() {
+		props.changeActiveOption({ number: props.number, answer: props.text });
+		props.onClick();
+	}
 
-  function onClick() {
-    setIsChecked(!isChecked);
-  }
-
-  return (
-    <div
-      className={`${styles.radioButton}  ${isChecked ? styles.checked : ""}  ${props.disabled ? styles.disabled : ""}`}
-      onClick={onClick}
-    >
-      <Radio id="rad" checked={isChecked} disabled={props.disabled} />
-      <label htmlFor="rad">{props.text}</label>
-    </div>
-  );
+	return (
+		<label
+			className={`${styles.radioButton}  ${
+				props.disabled ? styles.disabled : ''
+			}`}
+		>
+			<input
+				onClick={changeActiveOption}
+				type='radio'
+				className={styles.radio}
+				checked={props.checked}
+				onChange={() => {}}
+			/>
+			<span style={{marginLeft: '14px'}}>{props.text}</span>
+		</label>
+	);
 }

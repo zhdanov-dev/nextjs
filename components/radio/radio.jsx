@@ -1,13 +1,12 @@
-import styles from "./radio.module.scss";
+import styles from './radio.module.scss';
 
 export default function Radio(props) {
-  return (
-    <input
-      className={styles.radio}
-      type="radio"
-      disabled={props.disabled}
-      checked={props.checked}
-      name='name'
-    />
-  );
+	return (
+		<input
+			onClick={props.onClick}
+			type='radio'
+			className={styles.radio}
+			name='name'
+		/>
+	);
 }

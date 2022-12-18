@@ -7,6 +7,7 @@ export default function Button(props) {
       type="button"
       disabled={props.disabled}
       value={props.text}
+      onClick={props.onClick}
     />
   );
 }
